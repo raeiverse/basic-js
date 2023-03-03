@@ -4,7 +4,7 @@ class Person {
     // this.name to declare the data using variable called name
     this.name = "Raei";
   }
-  printMyName() {
+  printMyNames() {
     console.log(this.name);
   }
 }
@@ -24,12 +24,14 @@ class Persons extends Human {
     // super is needed when using another class, super = to show we use parent class item
     super();
     this.name = "Raei";
+    this.gender='female';
   }
   printMyNames() {
-    console.log(this.name);
+    console.log(this.name, this.gender);
   }
 }
 
+// person is var to call method and Persons is classes we make
 const person = new Persons();
 person.printMyNames();
 person.printGender();
